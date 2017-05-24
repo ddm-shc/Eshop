@@ -30,6 +30,8 @@ angular.module("eShop")
         homeService.addToCart(product)
             .then(function(res) {
                 alert("Successfully added to cart");
+            }, function(err){
+                alert("Unable to add to cart.");
             });
     };
 
