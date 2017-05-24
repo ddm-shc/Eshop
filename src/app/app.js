@@ -6,5 +6,6 @@ angular.module("eShop", [
 
 })
 
-.controller("eShopCtrl", function($scope, $state) {
+.controller("eShopCtrl", function($state) {
+	$state.go("home");
 });
