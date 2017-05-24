@@ -1,31 +1,42 @@
 {
-    "products": [{
-        "id": 1,
-        "title": "Nikon Camera 101",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }, {
-        "id": 1,
-        "title": "Nikon Camera 102",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }, {
-        "id": 1,
-        "title": "Nikon Camera 103",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }, {
-        "id": 1,
-        "title": "Nikon Camera D800",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }, {
-        "id": 1,
-        "title": "Nikon Camera D900",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }, {
-        "id": 1,
-        "title": "Nikon Camera 1000",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }, {
-        "id": 1,
-        "title": "Nikon Camera 5000",
-        "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
-    }]
+  "products": [
+    {
+      "id": 1,
+      "title": "Nikon Camera 101",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    },
+    {
+      "id": 1,
+      "title": "Nikon Camera 102",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    },
+    {
+      "id": 1,
+      "title": "Nikon Camera 103",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    },
+    {
+      "id": 1,
+      "title": "Nikon Camera D800",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    },
+    {
+      "id": 1,
+      "title": "Nikon Camera D900",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    },
+    {
+      "id": 1,
+      "title": "Nikon Camera 1000",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    },
+    {
+      "id": 1,
+      "title": "Nikon Camera 5000",
+      "description": "20.2 megapixels camera, NIKKOR lens with28x optical zoom"
+    }
+  ],
+  "cart": [
+    
+  ]
 }
