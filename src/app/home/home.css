@@ -1,4 +1,51 @@
 .home footer {
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.home header {
+    padding: 10px 20px;
+}
+
+.home section {
+    padding-top: 50px;
+    position: relative;
+    height: 300px;
+}
+
+.home .product {
+    display: table;
+    clear: both;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.home .productImg {
+    width: 40%;
+    float: left;
+}
+
+.home .productDesc {
+    width: 60%;
+    float: left;
+}
+
+.fa-angle-left {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 50px !important;
+    cursor: pointer;
+}
+
+.fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 50px !important;
+    cursor: pointer;
 }
