@@ -29,7 +29,7 @@ angular.module("eShop")
     };
 })
 
-.controller("HomeCtrl", function($scope, homeService) {
+.controller("HomeCtrl", function($scope, $state, homeService) {
 
     var init = function() {
         $scope.getProducts();
@@ -45,13 +45,10 @@ angular.module("eShop")
             });
     };
 
-    $scope.filterProducts = function() {
-        homeService.getProducts($scope.query)
-            .then(function(res) {
-                $scope.filteredProducts = res.data;
-            }, function(err) {
-                alert("Oops..!!! Seems like we were not able to fetch products.");
-            });
+    $scope.filterProducts = function(event) {
+        if (event.keyCode === 13) {
+            $state.go("search", { query: $scope.query });
+        }
     };
 
     $scope.addToCart = function(product) {
