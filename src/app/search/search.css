@@ -1,0 +1,10 @@
+.searchResults table {
+    width: 100%
+}
+
+.searchResults table td {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #ddd;
+    padding: 20px;
+}
