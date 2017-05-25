@@ -18,7 +18,7 @@
             <i class="fa fa-angle-right" ng-click="moveToNext()" ng-class="{'disabled' : selectedItem === products.length-1}"></i>
             <div class="product" ng-repeat="product in products" ng-class="{'active' : selectedItem === $index , 'left': selectedItem < $index, 'right': selectedItem > $index}">
                 <div class="productImg">
-                    <img src="src/assets/images/camera.jpg" height="200" />
+                    <img ng-src="src/assets/images/camera_{{$index+1}}.jpg" height="200" />
                 </div>
                 <div class="productDesc">
                     <h2> {{product.title}} </h2>
