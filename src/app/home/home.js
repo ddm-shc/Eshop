@@ -3,7 +3,7 @@ angular.module("eShop")
 .config(function($stateProvider) {
     $stateProvider
         .state('home', {
-            url: '/',
+            url: '/home',
             templateUrl: 'src/app/home/home.html',
             controller: "HomeCtrl"
         });
@@ -45,7 +45,21 @@ angular.module("eShop")
             });
     };
 
-    $scope.filterProducts = function(event) {
+    $scope.filterProducts = function() {
+        homeService.getProducts($scope.query)
+            .then(function(res) {
+                $scope.filteredProducts = res.data;
+            }, function(err) {
+                alert("Oops..!!! Seems like we were not able to fetch products.");
+            });
+    };
+
+    $scope.updateQuery = function(product) {
+        $scope.query = product.title;
+        $state.go("search", { query: $scope.query });
+    };
+
+    $scope.goToSearch = function(evt) {
         if (event.keyCode === 13) {
             $state.go("search", { query: $scope.query });
         }

@@ -2,10 +2,10 @@ angular.module("eShop", [
 	'ui.router'
 ])
 
-.config(function() {
-
+.config(function($urlRouterProvider) {
+	$urlRouterProvider.otherwise('/home');
 })
 
 .controller("eShopCtrl", function($state) {
-	$state.go("home");
+	
 });
