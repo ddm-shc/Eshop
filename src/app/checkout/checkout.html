@@ -1,0 +1,35 @@
+<header>
+    <h3> Checkout </h3>
+</header>
+<section class="checkout">
+    <form name="formData" novalidate ng-submit="formData.$valid && checkout()">
+        <div class="form-group form-card">
+            <label for="card"> Credit card </label>
+            <input id="card" type=text" ng-model="formData.card[0]"  pattern="[0-9]{4}"/>
+            <input id="card" type=text" ng-model="formData.card[1]" pattern="[0-9]{4}" />
+            <input id="card" type=text" ng-model="formData.card[2]"  pattern="[0-9]{4} "/>
+            <input id="card" type=text" ng-model="formData.card[3]" pattern="[0-9]{4}" />
+        </div>
+        <div class="form-group ">
+            <label for="name"> Name </label>
+            <input id="name" type=text" ng-model="formData.name " />
+        </div>
+        <div class="form-group ">
+            <label for="email"> Email </label>
+            <input id="email" type=email" ng-model="formData.email " />
+        </div>
+        <div class="form-group ">
+            <label for="phone_number"> Phone number </label>
+            <input id="phone_number" type=text" ng-model="formData.phoneNumber"  pattern="[0-9]{10} " />
+        </div>
+        <div class="form-group">
+            <label for="address"> Address </label>
+            <textarea id="address" ng-model="formData.address "></textarea>
+        </div>
+        <div class="form-group">
+            <label for="zipcode"> Zipcode </label>
+            <input id="zipcode" type="text" ng-model="formData.zipcode " pattern="[0-9]{6} " />
+        </div>
+        <button type="submit "> Checkout </button>
+    </form>
+</section>

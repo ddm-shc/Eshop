@@ -1,0 +1,21 @@
+.checkout .form-group {
+    width: 35%;
+    margin: 10px;
+}
+
+.checkout .form-group label {
+    width: 25%;
+    display: inline-block;
+}
+
+.checkout .form-group input {
+    width: 70%;
+}
+
+.checkout .form-card input {
+    width: 16%;
+}
+
+input.ng-invalid {
+    border: 2px solid red;
+}
