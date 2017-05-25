@@ -72,6 +72,15 @@ angular.module("eShop")
             });
     };
 
+    $scope.checkout = function() {
+        if (!localStorage.userToken) {
+            alert("Please login by pressing OK");
+            localStorage.userToken = 'eYjasgdjhagjhyu76217g2313';
+        } else {
+            $state.go('checkout');
+        }
+    };
+
     $scope.moveToPrev = function() {
         $scope.selectedItem -= 1;
     };

@@ -30,9 +30,18 @@ angular.module("eShop")
         homeService.addToCart(product)
             .then(function(res) {
                 alert("Successfully added to cart");
-            }, function(err){
+            }, function(err) {
                 alert("Unable to add to cart.");
             });
+    };
+
+    $scope.checkout = function() {
+        if (!localStorage.userToken) {
+            alert("Please login by pressing OK");
+            localStorage.userToken = 'eYjasgdjhagjhyu76217g2313';
+        } else {
+            $state.go('checkout');
+        }
     };
 
     init();
