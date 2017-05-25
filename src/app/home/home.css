@@ -63,6 +63,7 @@
     padding-top: 50px;
     position: relative;
     height: 310px;
+    overflow: hidden;
 }
 
 .home .product {
@@ -75,6 +76,26 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 50px;
+    transition: all 0.5s linear;
+    position: absolute;
+}
+
+.home .product.active {
+    left: 0;
+    right: 0;
+}
+
+.home .product.left {
+    left: 100%;
+}
+
+.home .product.right {
+    left: -100%;
+}
+
+.disabled {
+    pointer-events: none;
+    color: #eee;
 }
 
 .home .productImg {

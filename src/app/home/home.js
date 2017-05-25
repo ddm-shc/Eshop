@@ -60,16 +60,10 @@ angular.module("eShop")
 
     $scope.moveToPrev = function() {
         $scope.selectedItem -= 1;
-        if ($scope.selectedItem < 0) {
-            $scope.selectedItem = $scope.products.length - 1;
-        }
     };
 
     $scope.moveToNext = function() {
         $scope.selectedItem += 1;
-        if ($scope.selectedItem > $scope.products.length - 1) {
-            $scope.selectedItem = 0;
-        }
     };
 
     init();

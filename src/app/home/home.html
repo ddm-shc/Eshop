@@ -14,9 +14,9 @@
     </header>
     <section>
         <div class="products">
-            <i class="fa fa-angle-left" ng-click="moveToPrev()"></i>
-            <i class="fa fa-angle-right" ng-click="moveToNext()"></i>
-            <div class="product" ng-repeat="product in products" ng-show="selectedItem === $index">
+            <i class="fa fa-angle-left" ng-click="moveToPrev()" ng-class="{'disabled' : selectedItem === 0}"></i>
+            <i class="fa fa-angle-right" ng-click="moveToNext()" ng-class="{'disabled' : selectedItem === products.length-1}"></i>
+            <div class="product" ng-repeat="product in products" ng-class="{'active' : selectedItem === $index , 'left': selectedItem < $index, 'right': selectedItem > $index}">
                 <div class="productImg">
                     <img src="src/assets/images/camera.jpg" height="200" />
                 </div>
